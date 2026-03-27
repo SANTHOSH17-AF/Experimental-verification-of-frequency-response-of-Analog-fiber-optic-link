@@ -26,8 +26,8 @@ Fiber optic links can transmit both digital and analog signals. A fiber optic li
 - Buffer provides electrical connection and isolation.  
 - Driver powers the optical source to replicate the input signal.  
 - Optical source (LED) converts electrical current to light energy.  
-  - **SFH450V (950nm)**: Near infrared LED.  
-  - **SFH756V (660nm)**: Visible red LED.  
+- **SFH450V (950nm)**: Near infrared LED.  
+- **SFH756V (660nm)**: Visible red LED.  
 
 ### Receiver
 - Converts optical energy into electrical signals.  
@@ -41,12 +41,12 @@ Fiber optic links can transmit both digital and analog signals. A fiber optic li
 ## Procedure
 1. Connect power supply to Link-B kit and switch ON.  
 2. Set switches and jumpers:  
-   - SW8 → TX  
-   - SW9 → TX1  
-   - JP5 → +12V  
-   - JP6, JP9, JP10 → shorted  
-   - JP8 → sine  
-   - Pot P2 (Intensity control) → minimum  
+- SW8 → TX  
+- SW9 → TX1  
+- JP5 → +12V  
+- JP6, JP9, JP10 → shorted  
+- JP8 → sine  
+- Pot P2 (Intensity control) → minimum  
 3. Feed 2 Vpp sinusoidal signal (1 kHz) from function generator to **IN** of Analog Buffer.  
 4. Connect **OUT** of Analog Buffer → **TX IN** of Transmitter.  
 5. Connect fiber between SFH756V (660nm LED) and SFH350V detector.  
@@ -65,12 +65,15 @@ Fiber optic links can transmit both digital and analog signals. A fiber optic li
 | Frequency (Hz) | Input Amplitude (Vi) | Output Amplitude (Vo) | Gain (Vo/Vi) | Gain (dB) |
 |----------------|-----------------------|------------------------|--------------|-----------|
 |                |                       |                        |              |           |
+![ANALOG RESP](https://github.com/user-attachments/assets/91a6bf09-baff-4433-93f0-38b8c813837d)
 
 ---
 
 ## Model Graph
 - Plot **Gain (dB)** vs. **Frequency (Hz)**.  
 - Identify the **3 dB down point** to determine bandwidth.  
+## Model Graph 
+![ANALOG GRP](https://github.com/user-attachments/assets/376a0d86-8146-4705-8c6b-09428fb98027)
 
 ---
 
